@@ -4,6 +4,6 @@ cache:
   directories:
     - "node_modules"
 script:
-    - "npm run test:integration"
     - "npm run test:unit" 
+    - "npm run test:integration"
 after_success: npm run coveralls
