@@ -6,7 +6,7 @@
   "scripts": {
     "start": "babel-node ./server.js",
     "test:unit": "NODE_ENV=test nyc mocha --reporter spec --opts test/unit/mocha.opts test/unit/**/*_spec.js",
-    "test:integration": "NODE_ENV=test nyc mocha -R mocha-lcov-reporter --opts test/integration/mocha.opts test/integration/**/*_spec.js",
+    "test:integration": "NODE_ENV=test nyc mocha --reporter spec --opts test/integration/mocha.opts test/integration/**/*_spec.js",
     "coveralls": "NODE_ENV=test nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
